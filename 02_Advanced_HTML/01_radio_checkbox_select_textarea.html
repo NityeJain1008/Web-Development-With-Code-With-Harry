@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fitness Form</title>
+</head>
+
+<body>
+    <form action="/process.php">
+        <h1>Enter your fitness form</h1>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="your name">
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phonr" placeholder="your phone">
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="your password">
+        <br><br>
+
+        <label for="cpass">Confirm Password</label>
+        <input type="password" name="cpass" id="cpass" placeholder="your confirm password">
+        <br><br>
+
+        <label for="address">Permanent Address</label>
+        <input type="text" name="address" id="address" placeholder="Your Address">
+        <br><br>
+
+        <label for="weight">Enter Current Weight</label>
+        <input type="number" name="weight" id="weight" placeholder="Current Weight(in Kg)">
+        <br>
+
+        <h4>Enter your Gender</h4>
+
+        <input type="radio" name="gender" id="male">
+        <label for="male">male</label>
+
+        <input type="radio" name="gender" id="female">
+        <label for="female">female</label>
+
+        <input type="radio" name="gender" id="Other">
+        <label for="Other">Other</label>
+        <br>
+
+        <h4>Enter your hobies</h4>
+        <input type="checkbox" name="playing" id="playing">
+        <label for="playing">playing</label>
+
+        <input type="checkbox" name="running" id="running">
+        <label for="running">Running</label>
+
+        <input type="checkbox" name="reading" id="reading">
+        <label for="reading">Reading</label>
+        <br><br>
+
+        <label for="city">Choose a city:</label>
+        <select id="city" name="city">
+            <option>Select state</option>
+            <option value="AP">Andhra Pradesh</option>
+            <option value="AR">Arunachal Pradesh</option>
+            <option value="AS">Assam</option>
+            <option value="BR">Bihar</option>
+            <option value="CH">Chandigarh</option>
+            <option value="CT">Chhattisgarh</option>
+            <option value="DN">Dadra and Nagar Haveli</option>
+            <option value="DD">Daman and Diu</option>
+            <option value="DL">Delhi</option>
+            <option value="GA">Goa</option>
+            <option value="GJ">Gujarat</option>
+            <option value="HR">Haryana</option>
+            <option value="HP">Himachal Pradesh</option>
+            <option value="JK">Jammu and Kashmir</option>
+            <option value="JH">Jharkhand</option>
+            <option value="KA">Karnataka</option>
+            <option value="KL">Kerala</option>
+            <option value="LA">Ladakh</option>
+            <option value="LD">Lakshadweep</option>
+            <option value="MP">Madhya Pradesh</option>
+            <option value="MH">Maharashtra</option>
+            <option value="MN">Manipur</option>
+            <option value="ML">Meghalaya</option>
+            <option value="MZ">Mizoram</option>
+            <option value="NL">Nagaland</option>
+            <option value="OR">Odisha</option>
+            <option value="PY">Puducherry</option>
+            <option value="PB">Punjab</option>
+            <option value="RJ">Rajasthan</option>
+            <option value="SK">Sikkim</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="TG">Telangana</option>
+            <option value="TR">Tripura</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="UT">Uttarakhand</option>
+            <option value="WB">West Bengal</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        <br><br>
+        
+        <input type="submit" value="submit">
+
+
+    </form>
+
+</body>
+
+</html>
