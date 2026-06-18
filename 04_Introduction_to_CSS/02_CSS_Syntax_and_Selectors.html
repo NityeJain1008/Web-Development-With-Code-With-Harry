@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            /* background-color: yellow; */
+        }
+
+        .green {
+            color: green;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .highlight {
+            color: yellow;
+        }
+
+        .big {
+            font-size: 50px;
+        }
+
+        .small {
+            font-size: 30px;
+        }
+
+        #important {
+            background-color: yellow;
+        }
+
+        h1, h2, h3 {
+            font-size: 50px;
+            color: blueviolet;
+        }
+
+        div p {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="red big">class used is red and big </h1>
+
+    <p class="green small">class used is green and small</p>
+
+    <p class="highlight small">Class used is highlight and small</p>
+
+    <p id="important" class="red small">Id used is important and class used is red and small </p>
+    
+    <div>
+        <p>
+            This is a italic font inside div and p 
+        </p>
+    </div>
+    
+</body>
+
+</html>
