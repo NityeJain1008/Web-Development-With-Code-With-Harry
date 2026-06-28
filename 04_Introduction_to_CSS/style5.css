@@ -1,0 +1,23 @@
+h1 {
+    font-size: 34px;
+}
+
+p {
+    margin: 50px;
+}
+
+div {
+    width: 50%;
+    background-color: yellow;
+}
+
+.container {
+    width: 100vw;
+    /* Full width of the viewport */
+    height: 100vh;
+    /* Full height of the viewport */
+}
+
+section {
+    width: calc(100% - 200px);
+}
