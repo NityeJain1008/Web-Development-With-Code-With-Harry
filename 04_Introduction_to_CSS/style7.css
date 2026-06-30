@@ -1,0 +1,17 @@
+p{
+    height: 40vh;
+    width: 100vw;
+    background-color: yellow;
+    color: red;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/013/087/516/small/diagonal-golden-line-glass-cube-on-black-background-illustration-of-website-banner-poster-sign-corporate-business-social-media-post-billboard-agency-advertising-media-motion-video-animation-wave-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: contain ; 
+    background-attachment: fixed; 
+}
+
+div{
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 20px;
+}
