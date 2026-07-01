@@ -1,0 +1,11 @@
+.box{
+    padding: 20px;
+    margin: 10px;
+    background-color: yellow;
+}
+
+.bigbox{
+    padding: 40px ; 
+    margin : 20px ; 
+    background-color: red;
+}
