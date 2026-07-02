@@ -1,0 +1,24 @@
+.static{
+    position: static;
+    background-color: aqua;
+    border: 5px solid green ;
+    height: 144px;
+}
+
+.absolute{
+    position: absolute;
+    background-color: green;
+    border: 5px solid red ;
+    height: 80px;
+    bottom: 10px ; 
+}
+
+.fixed{
+    position: fixed;
+    background-color: blueviolet;
+    border: 5px solid green;
+    bottom : 20px ; 
+    left: 50px;
+    width: 50vw;
+    height: 10vw;
+}
