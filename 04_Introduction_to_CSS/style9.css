@@ -1,0 +1,21 @@
+div{
+    background-color: yellow;
+    padding: 10px;
+}
+
+span{
+    background-color: aqua;
+    margin: 10px ;
+}
+
+em{
+    display: block;
+    background-color: brown;
+}
+
+p{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background-color: blueviolet;
+}
