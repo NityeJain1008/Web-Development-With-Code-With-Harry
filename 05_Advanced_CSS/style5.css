@@ -1,0 +1,28 @@
+.container{
+    background-color: red;
+}
+
+.box{
+    background-color: aqua;
+    height: 45px;
+    width: 45px;
+    /* border: 3px solid grey; */
+    margin: 2px;
+    /* transition: all 0.5s ease */
+    animation: nitye-animation 2.5s ease 0.1s 3 normal;
+
+}
+
+@keyframes nitye-animation {
+    from{
+        width: 45px;
+    }
+    to{
+        width: 45vw;
+    }
+}
+
+/* .box:hover{
+    background-color: green;
+} */
+
