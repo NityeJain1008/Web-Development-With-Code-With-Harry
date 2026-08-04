@@ -22,7 +22,6 @@ const populateTodos = ()=>{
     // console.log(todo.isCompleted? "checked":"") ; 
 }
 
-
 addTodoBtn.addEventListener("click", ()=>{
     console.log("clicked") ; 
     todoText = inputTag.value ; 
