@@ -41,3 +41,33 @@ addTodoBtn.addEventListener("click", ()=>{
 
 populateTodos() ; 
 const todoCheckboxes = document.querySelectorAll(".todo-checkbox")
+
+todoCheckboxes.forEach(element => {
+    console.log(element) ; 
+    element.addEventListener("click", (e)=>{
+        if(e.target.checked){
+            element.parentNode.classList.add("completed") ;
+            todos = todos.map(todo =>{
+                if("todo-" + todo.id == element.parentNode.id){
+                    return {...todo, isCompleted:true} ; 
+                }
+                else{
+                    return todo ; 
+                }
+            })
+            
+        }
+        else{
+            element.parentNode.classList.remove("completed") ;
+            todos = todos.map(todo =>{
+                if("todo-" + todo.id == element.parentNode.id){
+                    return {...todo, isCompleted:false} ; 
+                }
+                else{
+                    return todo ; 
+                }
+            })
+        }
+        localStorage.setItem("todos", JSON.stringify(todos)) ; 
+    })
+});
