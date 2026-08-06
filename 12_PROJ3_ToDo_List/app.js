@@ -71,3 +71,19 @@ todoCheckboxes.forEach(element => {
         localStorage.setItem("todos", JSON.stringify(todos)) ; 
     })
 });
+
+document.getElementById("itemsLeft").innerHTML = `${todos.length} Items Left` ;
+
+let delbtn = document.querySelectorAll(".delete-btn") ; 
+
+delbtn.forEach(element =>{
+    element.addEventListener("click", (e)=>{
+    const todoId = Number(e.target.parentNode.id.replace("todo-", ""));
+
+    todos = todos.filter(todo => todo.id !== todoId);
+
+    localStorage.setItem("todos", JSON.stringify(todos));
+
+    e.target.parentNode.remove();
+    })
+})
