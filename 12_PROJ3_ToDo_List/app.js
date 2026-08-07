@@ -40,9 +40,9 @@ addTodoBtn.addEventListener("click", ()=>{
 })
 
 populateTodos() ; 
-const todoCheckboxes = document.querySelectorAll(".todo-checkbox")
+    const todoCheckboxes = document.querySelectorAll(".todo-checkbox")
 
-todoCheckboxes.forEach(element => {
+    todoCheckboxes.forEach(element => {
     console.log(element) ; 
     element.addEventListener("click", (e)=>{
         if(e.target.checked){
@@ -69,14 +69,10 @@ todoCheckboxes.forEach(element => {
             })
         }
         localStorage.setItem("todos", JSON.stringify(todos)) ; 
-    })
-});
 
-document.getElementById("itemsLeft").innerHTML = `${todos.length} Items Left` ;
+        let delbtn = document.querySelectorAll(".delete-btn") ; 
 
-let delbtn = document.querySelectorAll(".delete-btn") ; 
-
-delbtn.forEach(element =>{
+    delbtn.forEach(element =>{
     element.addEventListener("click", (e)=>{
     const todoId = Number(e.target.parentNode.id.replace("todo-", ""));
 
@@ -87,3 +83,7 @@ delbtn.forEach(element =>{
     e.target.parentNode.remove();
     })
 })
+    })
+});
+
+document.getElementById("itemsLeft").innerHTML = `${todos.length} Items Left` ;
