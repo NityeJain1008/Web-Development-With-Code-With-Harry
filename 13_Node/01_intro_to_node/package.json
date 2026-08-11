@@ -1,0 +1,16 @@
+{
+  "name": "intro-to-node",
+  "version": "1.0.0",
+  "description": "into",
+  "license": "ISC",
+  "author": "Nitye",
+  "type": "commonjs",
+  "main": "01_intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "lodash": "^4.18.1"
+  }
+}
